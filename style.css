@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #1e40af;
+    --text-color: #1f2937;
+    --light-text: #6b7280;
+    --background-light: #f3f4f6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation Styles */
+nav {
+    padding: 1.5rem 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.navbar {
+    list-style: none;
+    gap: 2rem;
+}
+
+.navbar li {
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar li:hover {
+    color: var(--primary-color);
+}
+
+/* Button Styles */
+.btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Hero Section Styles */
+.section1 {
+    padding: 4rem 0;
+}
+
+.section1 .flex {
+    gap: 2rem;
+    align-items: center;
+}
+
+.topleft {
+    flex: 1;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.topleft h1 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Modified paragraph styles for proper alignment */
+.topleft p {
+    color: var(--light-text);
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0 0 1.5rem 0;
+    padding: 0 1rem;
+    text-indent: 2rem; /* Adds paragraph indentation */
+}
+
+.topleft p.deal {
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-indent: 0; /* Removes indentation for deal text */
+    margin: 1rem 0;
+}
+
+.dumbellimg {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.topright {
+    flex: 1;
+}
+
+.gymimg {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+/* Membership Section Styles */
+.section2 {
+    padding: 4rem 0;
+    background-color: var(--background-light);
+}
+
+.section2 h1 {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+.section2 p {
+    text-align: justify;
+    padding: 0 2rem;
+    margin: 1.5rem 0;
+    line-height: 1.8;
+    color: var(--light-text);
+    text-indent: 2rem;
+}
+
+.boxes {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    padding: 0 2rem;
+}
+
+.box {
+    flex: 1;
+    min-width: 280px;
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.box h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.box ul {
+    list-style: none;
+    text-align: center;
+}
+
+.box ul li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.box ul li.highlighted {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+/* Compare Plans Section Styles */
+.section3 {
+    padding: 4rem 0;
+}
+
+.section3 h1 {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+.plantable {
+    overflow-x: auto;
+    padding: 0 2rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+
+.table th, .table td {
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+}
+
+.table thead th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.table tbody th {
+    background-color: var(--background-light);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: var(--text-color);
+    color: white;
+}
+
+/* Utility Classes */
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.my-1 {
+    margin: 1rem 0;
+}
+
+.my-2 {
+    margin: 2rem 0;
+}
+
+.my-3 {
+    margin: 3rem 0;
+}
+
+.px-2 {
+    padding: 0 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section1 .flex {
+        flex-direction: column;
+    }
+    
+    .navbar {
+        display: none;
+    }
+    
+    .boxes {
+        justify-content: center;
+        padding: 0 1rem;
+    }
+    
+    .box {
+        flex: none;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .topleft h1 {
+        font-size: 2rem;
+    }
+
+    .topleft p, .section2 p {
+        padding: 0 1rem;
+        text-align: left;
+    }
+
+    .plantable {
+        padding: 0 1rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section1, .section2, .section3 {
+    animation: fadeIn 1s ease-out;
+}
